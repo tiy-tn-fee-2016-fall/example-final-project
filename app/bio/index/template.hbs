@@ -1,0 +1,10 @@
+{{#link-to "bio.new"}}Add New Bio{{/link-to}}
+
+{{#each model as |profile|}}
+  <figure>
+    <h2>
+      {{ profile.firstName}} {{ profile.lastName}}
+    </h2>
+    <p>{{ profile.bio }}</p>
+  </figure>
+{{/each}}

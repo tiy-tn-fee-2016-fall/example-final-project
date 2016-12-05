@@ -1,0 +1,6 @@
+{{#simple-form onsubmit=(action "save") as |formValues|}}
+<p> {{input value=formValues.firstName}} </p>
+<p>{{input value=formValues.lastName}}</p>
+<p>{{input value=formValues.bio}}</p>
+<button>Save</button>
+{{/simple-form}}
